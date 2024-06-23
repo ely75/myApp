@@ -1,9 +1,5 @@
 pipeline {
-properties([
-        parameters([
-            choice(choices: ['ONE', 'TWO'], description: "Current Envoronnement", name: "ENV"),
-        ])
-    ])
+properties([parameters([choice(choices: 'test\ndeploy', name: 'baranch')])])
   
   agent any
   stages {
