@@ -1,5 +1,7 @@
 pipeline {
-properties([parameters([string(defaultValue: 'JOE', name: 'NOM', trim: true)])])
+ parameters {
+        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
+    }
   
   agent any
   stages {
