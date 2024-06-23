@@ -1,5 +1,5 @@
 pipeline {
-properties([parameters([choice(choices: ['Env1', 'Env2'], description: 'Current Environnement', name: 'ENV')])])
+properties([parameters([string(defaultValue: 'JOE', name: 'NOM', trim: true)])])
   
   agent any
   stages {
