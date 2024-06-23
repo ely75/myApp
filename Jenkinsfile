@@ -1,8 +1,8 @@
 pipeline {
 properties([
         parameters([
-            choice(choices: ['ONE', 'TWO'], description: "Current Envoronnement", name: "ENV")
-        ]),
+            choice(choices: ['ONE', 'TWO'], description: "Current Envoronnement", name: "ENV"),
+        ])
     ])
   
   agent any
